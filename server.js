@@ -27,8 +27,10 @@ server.register({
     }]
   }
 }, onError)
-server.route(Routes.index)
+
+server.route(Routes.index.render)
 server.route(Routes.assets)
+server.route(Routes.callback.auth)
 server.start(onStartUp)
 
 function onStartUp () {
