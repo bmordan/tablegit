@@ -30,7 +30,6 @@ server.register({
 
 server.route(Routes.index.render)
 server.route(Routes.assets)
-server.route(Routes.callback.auth)
 server.start(onStartUp)
 
 function onStartUp () {
