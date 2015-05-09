@@ -8,9 +8,9 @@ exports.render = {
   method: 'GET',
   path: '/',
   handler: function (req, res) {
-    client.get('issues', {}, function (err, status, body, headers){
-      console.log(body)
-      res.view('index', {projects: body})
+    var tableflip = client.org('tableflip')
+    tableflip.repos(function (err, repos) {
+      res.view('index', {repos: repos})
     })
   }
 }

@@ -8,6 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "bmordan",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/bmordan/tablegit"
+  },
   "license": "ISC",
   "dependencies": {
     "config": "^1.12.0",

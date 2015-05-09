@@ -4,11 +4,7 @@
   </h1>
 </section>
 <section>
-  {{#each projects}}
-    <hr>
-    <header><h1><a href="{{html_url}}">{{title}}</a></h1></header>
-    <main><p>{{body}}</p></main>
-    <footer>milestone: {{repository.milestone}} | open issues:{{repository.open_issues}}</footer>
-    <hr>
+  {{#each repos}}
+    <p>{{name}}</p>
   {{/each}}
 </section>

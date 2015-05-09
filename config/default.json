@@ -1,5 +1,7 @@
 {
-  "git": {
-    "token":""
-  }
+  "git":{
+    "token":"",
+    "ClientSecret":"",
+    "ClientId":""
+   }
 }
